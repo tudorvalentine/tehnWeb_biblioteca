@@ -42,6 +42,15 @@ namespace Biblioteca
         protected global::System.Web.UI.WebControls.TextBox txtTitlu;
 
         /// <summary>
+        /// rfvTitlu control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvTitlu;
+
+        /// <summary>
         /// txtAutor control.
         /// </summary>
         /// <remarks>
@@ -51,6 +60,15 @@ namespace Biblioteca
         protected global::System.Web.UI.WebControls.TextBox txtAutor;
 
         /// <summary>
+        /// rfvAutor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAutor;
+
+        /// <summary>
         /// txtAnPublicare control.
         /// </summary>
         /// <remarks>
@@ -58,6 +76,33 @@ namespace Biblioteca
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtAnPublicare;
+
+        /// <summary>
+        /// rfvAn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAn;
+
+        /// <summary>
+        /// revAnPublicare control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator revAnPublicare;
+
+        /// <summary>
+        /// rvAnPublicare control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvAnPublicare;
 
         /// <summary>
         /// btnSave control.

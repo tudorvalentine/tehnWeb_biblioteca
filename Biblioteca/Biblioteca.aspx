@@ -29,15 +29,27 @@
                <table>
                    <tr>
                        <td>Titlu:</td>
-                       <td><asp:TextBox ID="txtTitlu" runat="server"></asp:TextBox></td>
+                       <td>
+                           <asp:TextBox ID="txtTitlu" runat="server"></asp:TextBox>
+
+                           <asp:RequiredFieldValidator ID="rfvTitlu" runat="server" ControlToValidate="txtTitlu" ErrorMessage="Titlu este obligatoriu!" />
+                       </td>
                    </tr>
                    <tr>
                        <td>Autor:</td>
-                       <td><asp:TextBox ID="txtAutor" runat="server"></asp:TextBox></td>
+                       <td>
+                           <asp:TextBox ID="txtAutor" runat="server"></asp:TextBox>
+                           <asp:RequiredFieldValidator ID="rfvAutor" runat="server" ControlToValidate="txtAutor" ErrorMessage="Autor este obligatoriu" />
+                       </td>
                    </tr>
                    <tr>
                        <td>An Publicare:</td>
-                       <td><asp:TextBox ID="txtAnPublicare" runat="server"></asp:TextBox></td>
+                       <td>
+                           <asp:TextBox ID="txtAnPublicare" runat="server"></asp:TextBox>
+                           <asp:RequiredFieldValidator ID="rfvAn" runat="server" ControlToValidate="txtAnPublicare" ErrorMessage="An Publicare este obligatoriu" />
+                           <asp:RegularExpressionValidator ID="revAnPublicare" runat="server" ControlToValidate="txtAnPublicare" ErrorMessage="Anul publicării trebuie să fie un număr valid!" ValidationExpression="^\d{4}$" />
+                           <asp:RangeValidator ID="rvAnPublicare" runat="server" ControlToValidate="txtAnPublicare" ErrorMessage="Anul publicării trebuie să fie între 1900 și 2099!" MinimumValue="1900" MaximumValue="2024" Type="Integer" />
+                       </td>
                    </tr>
                    <tr>
                        <td colspan="2">
